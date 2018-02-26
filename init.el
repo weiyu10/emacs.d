@@ -170,3 +170,16 @@
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
+;; (require 'sr-speedbar)
+
+;; (add-to-list 'load-path "~/.emacs.d/all-the-icons")
+;; (require 'all-the-icons)
+
+(add-to-list 'load-path "~/.emacs.d/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+;; (setq neo-theme (if (display-graphic-p) 'all-the-icons 'all-the-icons))
+;; (setq neo-theme 'icons)
+
+;; (setq mac-command-modifier 'meta)
+;; (setq mac-option-modifier 'none)
