@@ -51,7 +51,15 @@
           (basic-save-buffer)))))
 (add-hook 'auto-save-hook 'full-auto-save)
 
+
 (global-set-key (kbd "<f1>") 'ggtags-find-definition); jump-to-define
 (global-set-key (kbd "<f2>") 'ggtags-find-reference); jump-to-define
 
+
+(auto-insert-mode)  ;;; Adds hook to find-files-hook
+(setq auto-insert-directory "~/.emacs.d/templates/")
+(setq auto-insert-query nil)
+(define-auto-insert "\.py" "python-template.py")
+
 (provide 'custom)
+
